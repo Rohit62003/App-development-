@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Ml">
+
+    <!-- AppBar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ml_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/ml_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/ml_primary"
+            app:title="@string/ml_title_roadmap"
+            app:titleTextColor="@android:color/white"
+            app:navigationIconTint="@android:color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ml_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/ml_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Intro Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ml_card_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="@color/ml_outline"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/ml_intro_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ml_intro_title"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ml_on_surface"/>
+
+                    <TextView
+                        android:id="@+id/ml_intro_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/ml_intro_desc"
+                        android:textSize="14sp"
+                        android:textColor="@color/ml_on_surface_variant"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Section: Foundations -->
+            <TextView
+                android:id="@+id/ml_section_foundations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ml_section_foundations"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/ml_stage_foundations"
+                android:paddingBottom="8dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ml_card_foundations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="@color/ml_outline"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/ml_foundations_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ml_foundations_points"
+                        android:textColor="@color/ml_on_surface"/>
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/ml_chipgroup_foundations"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_linear_algebra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:text="@string/ml_chip_linear_algebra" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_calculus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:text="@string/ml_chip_calculus" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_statistics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:text="@string/ml_chip_statistics" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_python"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:text="@string/ml_chip_python" />
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Section: Data -->
+            <TextView
+                android:id="@+id/ml_section_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/ml_section_data"
+                android:textColor="#039BE5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ml_card_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="@color/ml_outline"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/ml_data_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ml_data_points"
+                        android:textColor="@color/ml_on_surface"/>
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/ml_chipgroup_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_pandas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_pandas"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_numpy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_numpy"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_viz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_viz"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Section: Modeling -->
+            <TextView
+                android:id="@+id/ml_section_modeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/ml_section_modeling"
+                android:textColor="#43A047"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ml_card_modeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="@color/ml_outline"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/ml_modeling_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ml_modeling_points"
+                        android:textColor="@color/ml_on_surface"/>
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/ml_chipgroup_modeling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_supervised"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_supervised"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_unsupervised"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_unsupervised"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_nn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_nn"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_sklearn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_sklearn"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_tf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_tf"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Section: Evaluation -->
+            <TextView
+                android:id="@+id/ml_section_evaluation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ml_section_evaluation"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/ml_stage_evaluation"
+                android:paddingBottom="8dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ml_card_evaluation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="@color/ml_outline"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/ml_eval_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ml_eval_points"
+                        android:textColor="@color/ml_on_surface"/>
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/ml_chipgroup_eval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_metrics_cls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_metrics_cls"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_metrics_reg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_metrics_reg"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_cv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_cv"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Section: Deployment -->
+            <TextView
+                android:id="@+id/ml_section_deploy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ml_section_deploy"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/ml_stage_deployment"
+                android:paddingBottom="8dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ml_card_deploy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="@color/ml_outline"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/ml_deploy_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ml_deploy_points"
+                        android:textColor="@color/ml_on_surface"/>
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/ml_chipgroup_deploy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_onnx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_onnx"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_fastapi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_fastapi"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_docker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_docker"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/ml_chip_monitoring"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ml_chip_monitoring"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Start Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ml_btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ml_btn_start"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/ml_primary"
+                android:textColor="@android:color/white"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

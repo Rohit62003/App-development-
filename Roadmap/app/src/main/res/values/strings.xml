@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Roadmap</string>
+    <string name="call_us">CALL US</string>
+    <string name="ai">AI</string>
+    <string name="android">Android</string>
+    <string name="analytic">Data Analytic</string>
+    <string name="cybersecurity">Cybersecurity</string>
+    <string name="ml">ML</string>
+    <string name="web_dev">Web Dev</string>
+    <string name="let_s_go">Let\'s GO</string>
+    <string name="welcome_to_roadmap">Welcome to RoadMap</string>
+
+<!--ai-->
+
+        <!-- General -->
+        <string name="ai_title_text">ROADMAP OF AI</string>
+        <string name="ai_cd_arrow">Expand or collapse section</string>
+        <string name="ai_footer_text">A complete AI learning journey — from basics to AGI</string>
+
+        <!-- Foundations -->
+        <string name="ai_foundations_title">1. FOUNDATIONS</string>
+        <string name="ai_foundations_body">• Mathematics: Linear Algebra, Probability, Calculus\n• Programming: Python (NumPy, Pandas, Matplotlib)\n• Git, OOP, Debugging</string>
+
+        <!-- Core ML -->
+        <string name="ai_coreml_title">2. CORE AI / ML</string>
+        <string name="ai_coreml_body">• Regression, Classification (SVM, Trees, Random Forests)\n• Clustering (K-means, DBSCAN)\n• Model evaluation: Precision, Recall, F1, ROC\n• Cross-validation, Hyperparameter tuning</string>
+
+        <!-- Deep Learning -->
+        <string name="ai_deep_title">3. DEEP LEARNING</string>
+        <string name="ai_deep_body">• Neural networks, Activations, Backpropagation\n• CNNs (Vision), RNNs/LSTMs (Sequences)\n• Transformers (BERT, GPT)\n• Frameworks: TensorFlow, PyTorch, Keras</string>
+
+        <!-- Specialized Fields -->
+        <string name="ai_specialized_title">4. SPECIALIZED FIELDS</string>
+        <string name="ai_specialized_body">• Computer Vision: Classification, Detection, Segmentation\n• NLP: Embeddings, Transformers, Chatbots\n• Reinforcement Learning: Q-Learning, PPO\n• Generative AI: GANs, VAEs, Diffusion</string>
+
+        <!-- Deployment & MLOps -->
+        <string name="ai_mlops_title">5. DEPLOYMENT &amp; MLOPS</string>
+        <string name="ai_mlops_body">• Model serving: Flask/FastAPI, Docker, Kubernetes\n• Cloud: AWS, GCP, Azure\n• MLOps: MLflow, Kubeflow, DVC\n• Monitoring &amp; scaling AI systems</string>
+
+        <!-- Ethics & Advanced -->
+        <string name="ai_ethics_title">6. ETHICS &amp; ADVANCED TOPICS</string>
+        <string name="ai_ethics_body">• Fairness, Bias, Explainability (SHAP, LIME)\n• AI Governance, Regulations\n• Alignment &amp; AI Safety\n• Frontier: AGI, Edge AI</string>
+
+
+
+<!--    ml -->
+
+
+        <!-- Titles -->
+        <string name="ml_title_roadmap">Machine Learning Roadmap</string>
+        <string name="ml_intro_title">Plan your ML journey</string>
+
+        <!-- Intro -->
+        <string name="ml_intro_desc">
+        Follow these stages to learn ML step-by-step: foundations, data handling, modeling, evaluation, and deployment.
+    </string>
+
+        <!-- Sections -->
+        <string name="ml_section_foundations">1) Foundations</string>
+        <string name="ml_section_data">2) Data Pipeline</string>
+        <string name="ml_section_modeling">3) Modeling</string>
+        <string name="ml_section_evaluation">4) Evaluation</string>
+        <string name="ml_section_deploy">5) Deployment</string>
+
+        <!-- Bullet-like text (use \n for lines) -->
+        <string name="ml_foundations_points">
+        • Learn Python basics (functions, OOP, venv)\n
+        • Math for ML: linear algebra, calculus, probability\n
+        • Data structures &amp; algorithms (optional but helpful)
+    </string>
+
+        <string name="ml_data_points">
+        • Collect &amp; clean data (CSV/JSON/SQL)\n
+        • Handle missing values, outliers, encoding, scaling\n
+        • Visualization and EDA to find patterns
+    </string>
+
+        <string name="ml_modeling_points">
+        • Pick task: classification, regression, clustering\n
+        • Train/validate/test split, baselines first\n
+        • Feature engineering &amp; model selection
+    </string>
+
+        <string name="ml_eval_points">
+        • Choose right metrics (task-specific)\n
+        • Cross-validation &amp; hyperparameter tuning\n
+        • Check overfitting/underfitting, learning curves
+    </string>
+
+        <string name="ml_deploy_points">
+        • Export model (joblib/ONNX)\n
+        • Wrap with API (FastAPI/Flask)\n
+        • Containerize (Docker) &amp; monitor in production
+    </string>
+
+        <!-- Chips -->
+        <string name="ml_chip_linear_algebra">Linear Algebra</string>
+        <string name="ml_chip_calculus">Calculus</string>
+        <string name="ml_chip_statistics">Statistics</string>
+        <string name="ml_chip_python">Python</string>
+
+        <string name="ml_chip_pandas">Pandas</string>
+        <string name="ml_chip_numpy">NumPy</string>
+        <string name="ml_chip_viz">Matplotlib</string>
+
+        <string name="ml_chip_supervised">Supervised</string>
+        <string name="ml_chip_unsupervised">Unsupervised</string>
+        <string name="ml_chip_nn">Neural Nets</string>
+        <string name="ml_chip_sklearn">scikit-learn</string>
+        <string name="ml_chip_tf">TensorFlow/PyTorch</string>
+
+        <string name="ml_chip_metrics_cls">Accuracy/F1/AUC</string>
+        <string name="ml_chip_metrics_reg">MAE/MSE/R²</string>
+        <string name="ml_chip_cv">Cross-Validation</string>
+
+        <string name="ml_chip_onnx">ONNX</string>
+        <string name="ml_chip_fastapi">FastAPI</string>
+        <string name="ml_chip_docker">Docker</string>
+        <string name="ml_chip_monitoring">Monitoring</string>
+
+        <!-- Button -->
+        <string name="ml_btn_start">Start Learning</string>
+
+
+<!--android app-->
+       
+    
+    
+</resources>

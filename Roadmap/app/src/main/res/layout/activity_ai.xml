@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ai_bg"
+    android:id="@+id/main"
+    android:padding="16dp"
+    tools:context=".Ai">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/ai_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_title_text"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/ai_title_text"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 1. FOUNDATIONS -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ai_card_foundations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/ai_card_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Header -->
+                <LinearLayout
+                    android:id="@+id/ai_header_foundations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/ai_header_text_foundations"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ai_foundations_title"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ai_accent_blue" />
+
+                    <ImageView
+                        android:id="@+id/ai_arrow_foundations"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/arrow_down_float"
+                        app:tint="@color/ai_accent_blue"
+                        android:contentDescription="@string/ai_cd_arrow" />
+                </LinearLayout>
+
+                <!-- Body -->
+                <TextView
+                    android:id="@+id/ai_body_foundations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_foundations_body"
+                    android:textSize="15sp"
+                    android:textColor="@color/ai_text_primary"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 2. CORE AI / ML -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ai_card_coreml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/ai_card_orange">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ai_header_coreml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/ai_header_text_coreml"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ai_coreml_title"
+                        android:textColor="#F4511E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ai_arrow_coreml"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/ai_cd_arrow"
+                        android:src="@android:drawable/arrow_down_float"
+                        app:tint="@color/ai_accent_orange"
+                        tools:ignore="ImageContrastCheck" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ai_body_coreml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_coreml_body"
+                    android:textSize="15sp"
+                    android:textColor="@color/ai_text_primary"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 3. DEEP LEARNING -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ai_card_deep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/ai_card_teal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ai_header_deep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/ai_header_text_deep"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ai_deep_title"
+                        android:textColor="#009688"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ai_arrow_deep"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/ai_cd_arrow"
+                        android:src="@android:drawable/arrow_down_float"
+                        app:tint="@color/ai_accent_teal"
+                        tools:ignore="ImageContrastCheck" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ai_body_deep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_deep_body"
+                    android:textSize="15sp"
+                    android:textColor="@color/ai_text_primary"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 4. SPECIALIZED FIELDS -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ai_card_specialized"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/ai_card_purple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ai_header_specialized"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/ai_header_text_specialized"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ai_specialized_title"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ai_accent_purple" />
+
+                    <ImageView
+                        android:id="@+id/ai_arrow_specialized"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/arrow_down_float"
+                        app:tint="@color/ai_accent_purple"
+                        android:contentDescription="@string/ai_cd_arrow" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ai_body_specialized"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_specialized_body"
+                    android:textSize="15sp"
+                    android:textColor="@color/ai_text_primary"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 5. DEPLOYMENT & MLOPS -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ai_card_mlops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/ai_card_orange">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ai_header_mlops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/ai_header_text_mlops"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ai_mlops_title"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ai_accent_orange" />
+
+                    <ImageView
+                        android:id="@+id/ai_arrow_mlops"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/arrow_down_float"
+                        app:tint="@color/ai_accent_orange"
+                        android:contentDescription="@string/ai_cd_arrow" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ai_body_mlops"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_mlops_body"
+                    android:textSize="15sp"
+                    android:textColor="@color/ai_text_primary"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 6. ETHICS & ADVANCED -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ai_card_ethics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/ai_card_purple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ai_header_ethics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/ai_header_text_ethics"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ai_ethics_title"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ai_accent_purple" />
+
+                    <ImageView
+                        android:id="@+id/ai_arrow_ethics"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/arrow_down_float"
+                        app:tint="@color/ai_accent_purple"
+                        android:contentDescription="@string/ai_cd_arrow" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ai_body_ethics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_ethics_body"
+                    android:textSize="15sp"
+                    android:textColor="@color/ai_text_primary"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Footer -->
+        <TextView
+            android:id="@+id/ai_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_footer_text"
+            android:textSize="14sp"
+            android:textColor="@color/ai_text_muted"
+            android:padding="16dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

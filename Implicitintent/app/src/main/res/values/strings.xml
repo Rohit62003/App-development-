@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Implicit intent</string>
+    <string name="camera">Camera</string>
+    <string name="myportfolio">Myportfolio</string>
+</resources>

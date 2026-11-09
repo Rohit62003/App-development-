@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary app color -->
+        <item name="colorPrimary">@color/cobalt</item>
+        <!-- Status bar color -->
+        <item name="colorPrimaryDark">@color/Dark_charcoal</item>
+        <!-- Accent color (buttons, highlights) -->
+        <item name="colorAccent">@color/white</item>
+        <!-- Remove default action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

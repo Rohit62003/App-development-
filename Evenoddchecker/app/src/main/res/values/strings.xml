@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Even odd checker</string>
+    <string name="check">Check</string>
+    <string name="textview">TextView</string>
+    <string name="even_odd_checker">EVEN ODD CHECKER</string>
+    <string name="enter_the_number">Enter the number</string>
+</resources>

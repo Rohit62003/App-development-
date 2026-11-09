@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">alert box</string>
+    <string name="example_1">Example 1</string>
+    <string name="example_2">Example 2</string>
+    <string name="different_types_of_alert_dialog_box">Different types of Alert dialog box</string>
+    <string name="example_3">Example 3</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurant basic order</string>
+    <string name="enter_second_order">Enter Second order</string>
+    <string name="order_now">Order now</string>
+    <string name="welcome_to_my_restaurant">Welcome to my Restaurant</string>
+    <string name="enter_first_order">Enter first order</string>
+    <string name="enter_fourth_order">Enter fourth order</string>
+    <string name="enter_third_order">Enter third order</string>
+</resources>

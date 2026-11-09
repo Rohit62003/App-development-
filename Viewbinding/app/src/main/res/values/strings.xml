@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">View binding</string>
+    <string name="click">click</string>
+</resources>
