@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "381569018313",
+    "project_number": "*****8313",
     "project_id": "learn-sign-in-and-sign-up",
     "storage_bucket": "learn-sign-in-and-sign-up.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:381569018313:android:8649c3091ec2db00d8e018",
+        "mobilesdk_app_id": "1:*******313:android:8******ec2db00d8e018",
         "android_client_info": {
           "package_name": "com.example.signinandsignup"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDZBn_QN8mVjlfzLy9XwJsLONSPUfC-aGs"
+          "current_key": "Enter key "
         }
       ],
       "services": {
